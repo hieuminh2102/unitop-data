@@ -1,0 +1,27 @@
+
+/* #header{
+    padding: 10px;
+    background-color: antiquewhite
+    ;
+}
+
+ul#mainmenu{
+    background: antiquewhite;
+}
+
+h1{
+    color: #f00;
+} */
+h1{
+    color: aqua;
+}
+.post-title{
+    color: pink;
+}
+
+h1#home-title{
+    color: red;
+}
+#home-title{
+    color: khaki;
+}

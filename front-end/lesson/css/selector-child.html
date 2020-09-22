@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child selector</title>
+</head>
+<body>
+    <style>
+        /* ul li:first-child{
+            font-weight: bold;
+            color: red;
+        }
+        ul li:last-child{
+            font-weight: bold;
+            color: green;
+        } */
+        /* ul li:nth-child(odd){
+            font-weight: bold;
+            color: greenyellow;
+        }
+        ul li:nth-child(even){
+            font-weight: lighter;
+            color: lightblue;
+        } */
+        ul li:nth-child(2n+1){
+            color: lightcoral;
+            font-weight: bold;
+        }
+    </style>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ul>
+</body>
+</html>

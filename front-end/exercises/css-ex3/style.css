@@ -1,0 +1,25 @@
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+h1{
+    background: pink;
+}
+h1:hover{
+    background: brown;
+}
+.text-blue{
+    color:blue;
+}
+h2{
+    color: gold;
+}
+p>a{
+    color: red;
+}
+p>a:hover{
+    color: yellow;
+}
+input:checked+label{
+    color: red;
+}

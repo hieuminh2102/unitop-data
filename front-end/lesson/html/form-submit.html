@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form submit</title>
+</head>
+
+<body>
+    <h1>form submit</h1>
+    <form action="" method="post">
+        <label for="username">tên đăng nhập</label><br>
+        <input type="text" name="username" placeholder="ten dang nhap" id="username"> <br>
+        <label for="password">mật khẩu</label><br>
+        <input type="password" name="passwword" placeholder="mat khau" id="password"><br> <br>
+        <!-- <input type="submit" value="dang nhap" name="btn-login"> -->
+        <button>
+            <!-- cấu trúc html -->
+            <img height="14px" src="data:image/png;base64,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"
+                alt="hỏng">đăng nhập
+        </button>
+    </form>
+</body>
+
+</html>

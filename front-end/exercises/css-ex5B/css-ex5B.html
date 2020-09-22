@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css ex5B</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        header {
+            padding: 15px;
+        }
+
+        footer {
+            padding: 10px 0px;
+        }
+
+        #content {
+            width: 600px;
+            background: #f3f3f3;
+            min-height: 550px;
+            float: left;
+        }
+
+        #sidebar {
+            width: 360px;
+            background: rgb(238, 238, 158);
+            min-height: 550px;
+            float: right;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        .bg-green {
+            background: green;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .p-15 {
+            padding: 15px;
+        }
+
+        *    {
+            box-sizing: border-box;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        /* ===CÁch 1.1=== */
+        #wp-content::after {
+            content: ".";
+            clear: both;
+            visibility: hidden;
+            /* vì sao phải sử dụng display: block; */
+            display: block;
+            line-height: 0;
+            height: 0;
+        }
+
+        /* ===cách 1.2=== */
+        /* .clearfix:after{
+            content: ".";
+            clear:both;
+            visibility: hidden;
+            display: block;
+            line-height: 0;
+            height: 0;
+        } */
+        /* .clearfix {
+            clear: both;
+            display: block; 
+        } */
+    </style>
+    <div id="wrapper">
+        <header class="bg-green text-center text-white">Layout web 2 cột</header>
+        <div id="wp-content" class="clearfix">
+            <div id="content" class="p-15">Content</div>
+            <div id="sidebar" class="p-15">Sidebar</div>
+            <!-- ===CÁch 2=== -->
+            <!-- <div class="clear-both"></div>  -->
+        </div>
+        <footer class="bg-green text-center text-white">Unitop.vn</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before after selector</title>
+</head>
+
+<body>
+    <style>
+        h2:before {
+            content: "✧";
+            color: gold;
+        }
+
+        h2:after {
+            content: "✧";
+            color: #f00;
+        }
+
+        .list-post a:after {
+            content: url("https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074__340.jpg");
+        }
+        /* icon font */
+    </style>
+    <h2>before after selector</h2>
+    <ul class="list-post">
+        <li><a href="">Bài viết số 1</a></li>
+        <li><a href="">Bài viết số 1</a></li>
+        <li><a href="">Bài viết số 1</a></li>
+        <li><a href="">Bài viết số 1</a></li>
+
+    </ul>
+</body>
+
+</html>

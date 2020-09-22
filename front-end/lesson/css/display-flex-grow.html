@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Grow</title>
+</head>
+<body>
+    <style>
+        .container{
+            background-color: indianred;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .flex-item{
+            background-color: tomato;
+            padding: 30px;
+            width: 100px;
+            margin: 10px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            flex-basis: 19%;
+
+        }
+        .item-1{
+            order: 1;
+            flex-grow: 1;
+        }
+        .item-3{
+            order: 2;
+        }
+        .item-2{
+            order: 2;
+            flex-grow: 2;
+        }
+        .item-4{
+            order: -1;
+        }
+    </style>
+    <h1>Display Flex Grow</h1>
+   <div class="container">
+       <div class="flex-item item-1">1</div>
+       <div class="flex-item item-2">2</div>
+       <!-- <div class="flex-item item-3">3</div> -->
+
+   </div>
+</body>
+</html>

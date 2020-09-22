@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr selector</title>
+</head>
+<body>
+    <style>
+        a[href]{
+            color: cyan;
+        }
+        /* attr bắt đàu bởi value thì dùng ^
+        attr kết thúc bỏi valua thì dùng $
+        attr chứa chuỗi nào đấy thì dùng *
+         */
+        a[href^="http"]{
+            color:brown;
+        }
+    </style>
+    <h1>attr selector</h1>
+    <a href="http://unitop.vn">php master</a><br>
+    <a href="http:google.com">bootraps az</a>
+</body>
+</html>
