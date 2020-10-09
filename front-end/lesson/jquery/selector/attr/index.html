@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selector theo thuộc tính</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // 1- Tô màu đỏ cho trang chủ
+            // $("a[href='home.html']").css('color','red');
+            // 2- Tô màu #333 cho tất cả các phần tử menu không phải là trang chủ
+            // $("a[href != 'home.html']").css('color', '#333');
+            // 3- lấy tất cả menu product
+            // $("a[href *='product']").css('color', 'red');
+            // 4- LẤY sản phẩm có tên product theo sau là dấu gạch ngang - cho màu gold
+            // $("a[href |= 'product']").css('color', 'gold');
+            // 5- tất cả menu bắt đầu bằng product cho nó màu #f5f5f5
+            // $("a[href ^= 'product']").css('color', '#f5f5f5');
+            // 6- lấy tất cả menu có kết thúc là t.html
+            // $("a[href $= 't.html']").css('color', 'pink');
+            // 7- lấy tất cả menu có title có chứa từ Trang và xung quanh có khoảng trắng, cho mau green
+            // $("a[title ~= 'Trang']").css('color', 'green');
+            // 8- lấy tất cả menu có href, cho màu đỏ
+            // $("a[href]").css('color', 'red');
+            // 9- lấy menu product có 2 từ trở lên, cho có màu gray
+            // $("a[href*='product'][title*=' ']").css('color', 'gray');
+            $("a[data-module = 'home']").css('color', 'yellow');
+        });
+    </script>
+
+    <h1>Menu website</h1>
+    <a href="home.html" data-module='home' title="Trang chủ">Trang chủ</a><br/>
+    <a href="about.html" title="Trang Giới thiệu">Giới thiệu</a><br/>
+    <a href="product-shoes.html" title="Giày">Giày</a><br/>
+    <a href="product-clothes.html" title="Quần áo">Quần áo</a><br/>
+    <a title="Liên hệ">Liên hệ</a><br/>
+
+</body>
+</html>

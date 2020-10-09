@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo định vị</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // jQuery làm việc với chỉ số bắt đầu từ 0
+        $(document).ready(function () {
+            // 1- Chọn phần tử p có chỉ số 1 => màu đỏ
+            //  $("div.box p:eq(1)").css('color', 'red');
+            // 2- chọn phần tử p đầu tiên => màu đỏ
+            //  $("p:first").css('color', 'red');
+            // 3- chọn phần tử p cuối cùng => màu đỏ
+             $("p:last").css('color', 'red');
+            // 4- chọn phần tử p có chỉ số lớn hơn 1 => màu đỏ
+            //  $("p:gt(1)").css('color', 'red');
+            // 5- chọn phần tử p có chỉ số bé hơn 1 => màu đỏ
+            //  $("p:lt(2)").css('color', 'red');
+            // 6- chọn phần tử chỉ số lẻ
+           // $("p:odd").css('color', 'red');
+            // 7- chọn phần tử chỉ số chẵn
+            // $("p:even").css('color', 'red');
+            // 8- chọn tất cả phần tử p ngoại trừ chỉ số 2 =>màu đỏ
+            // $("p:not('p:eq(2)')").css('color', 'red');
+            // $("p:not('p.p2')").css('color', 'red');
+
+        });
+    </script>
+    <p>Đoạn văn 0</p>
+    <p>Đoạn văn 1</p>
+    <p class="p2">Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <div class="box">
+        <p>Đoạn văn 7</p>
+        <p>Đoạn văn 8</p>
+        <p>Đoạn văn 9</p>
+    </div>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+</body>
+
+</html>

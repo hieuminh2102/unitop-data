@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp for</title>
+</head>
+<body>
+    <script>
+        //bài 1
+        document.write(" Tính tổng các số lẻ từ 1 đến 1500" + "<br/ >");
+        var n=1500, total = 0;
+        for(var i=1; i<=n; i++){
+            if(i%2 == 1){
+                total += i;
+            }
+        }
+        document.write("Tổng các số lẻ là: " + total + "<br/>");
+        document.write("============="+"<br/>");
+        
+        //bài 2
+        document.write(" Tính tổng chuỗi T1 = 1+ 1/2 +1/3 + ..+1/n" + "<br/ >");
+        var n=3, T1= 0;
+        for(var i = 1; i<=n; i++){
+            if(i>0){
+                T1 += 1/i;
+            }
+        }
+        document.write("Tổng chuỗi T1 là " + T1 +"<br/>");
+        document.write("============="+"<br/>");
+
+        //bài 3
+        document.write("Tính tổng chuỗi T2 = 1/2 +2/3 + 3/4+ .. + (n-1)/n"+ "<br/ >");
+        var n= 4, T2=0;
+        for(var i=1; i<=n; i++){
+            if(i>0){
+                T2 += i/(i+1) ;
+            }
+        }
+        document.write("Tổng chuỗi T2 là "  + T2);
+    </script>
+</body>
+</html>

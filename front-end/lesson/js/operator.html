@@ -64,18 +64,19 @@
             //     document.write('no no no');
             // }
                 
-            // c-
-            // var a= -5;
-            // function check_even(x){
-            //     if(x % 2 == 0)
-            //         return true;
-            //     return false;
-            // }
-            // if(!check_even(a)){
-            //     document.write('a là số nguyên lẻ');
-            // }else{
-            //     document.write('a là số nguyên chẵn');
-            // }
+            // c- thử a=5 thì 5 không chia hết cho 2 => return false. phủ định của false là true => số lẻ
+            // 6 chia hết cho 2  => return true. phu định cua true là false => số  chẵn
+            var a= 6;
+            function check_even(x){
+                if(x % 2 == 0)
+                    return true;
+                return false;
+            }
+            if(!check_even(a)){
+                document.write(a + 'là số nguyên lẻ');
+            }else{
+                document.write(a + 'là số nguyên chẵn');
+            }
 
             //5- phép toán chuỗi
             // a-
@@ -85,13 +86,13 @@
             // document.write(str_3);
 
             // b-
-            var a=10;
-            var b="hai";
-            var c=5;
-            var d='6';
+            // var a=10;
+            // var b="hai";
+            // var c=5;
+            // var d='6';
             // document.write(a + b);
             // document.write(a + c);
-            document.write(a+d);
+         //   document.write(a+d);
     </script>
 </body>
 
