@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic slider</title>
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="asset/js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            var src_img_click, src_img_first;
+            // 4- hien thi hinh anh mac dinh
+
+            src_img_first = $("ul#list-thumb li:first-child img").attr('src');
+            $("#show img").attr("src", src_img_first);
+
+            $("ul#list-thumb li a").click(function () {
+                //3- hien thi hinh anh duoc chon
+                src_img_click = $(this).children('img').attr('src');
+                // console.log(src_img_click);
+                $("#show img").attr('src', src_img_click);
+                $("#show img").css({
+                    width: '350px', height: '350px'
+                });
+
+                $("ul#list-thumb li").removeClass('active');
+                $(this).parent('li').addClass('active');
+                return false;
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h1>Basic slider product</h1>
+        <div id="wp-slider">
+            <div id="show">
+                <img src="asset/images/Show.png" alt="">
+            </div>
+            <!-- end show -->
+            <div id="wp-list-thumb">
+                <ul id="list-thumb">
+                    <li><a href="#"><img src="asset/images/thumb-1.png" alt=""></a></li>
+                    <li><a href="#"><img src="asset/images/thumb-2.png" alt=""></a></li>
+                    <li><a href="#"><img src="asset/images/thumb-3.png" alt=""></a></li>
+                    <li><a href="#"><img src="asset/images/thumb-4.png" alt=""></a></li>
+                </ul>
+            </div>
+            <!-- end wp-list-thumb -->
+        </div>
+        <!-- end wp-slider -->
+    </div>
+
+
+
+</body>
+
+</html>

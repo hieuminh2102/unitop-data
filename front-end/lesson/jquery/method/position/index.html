@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức xử lý tọa độ- khoảng cách</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+        #wrapper{
+            width: 960px;
+            margin: 0px auto;
+        }
+        #header, #footer{
+            background: #333333;
+            color: #fff;
+            padding: 20px 0px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #content{
+            padding: 20px 0px;
+            position: relative;
+        }
+        #content p{
+            margin-bottom: 15px;
+        }
+        .widget{
+            width: 100px;
+            height: 50px;
+            background: #f00;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+        //position
+        var widget_top_content, widget_left_content;
+        widget_top_content = $('.widget').position().top;
+        widget_left_content = $('.widget').position().left;
+        console.log(widget_top_content +"-"+ widget_left_content); 
+        
+
+        // offset
+            // var content_top = $('#content').offset().top;
+            // var footer_top = $('#footer').offset().top;
+
+            // console.log(content_top +"-"+ footer_top);
+
+        //scroll
+            // var window_scroll_top, window_scroll_left;
+            // // $(window).scrollTop(200); //thiết lập khoảng cách = 200 giữa thanh cuộn với mép trên
+            // $(window).scroll(function(){
+            //     // alert('ĐAng scroll..');
+            //     window_scroll_top = $(window).scrollTop();
+            //     window_scroll_left = $(window).scrollLeft();
+
+            //     console.log(window_scroll_top +'-'+ window_scroll_left);
+            // });
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            header
+        </div>
+        <!-- end header -->
+        <div id="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ullam assumenda cupiditate eligendi
+                fugit, sint, asperiores quas quasi excepturi voluptatum delectus aliquam sunt. Assumenda voluptate
+                accusamus nesciunt culpa eveniet, nisi tenetur? Dolorum, illum ab beatae eligendi incidunt cumque?
+                Mollitia omnis libero quas, provident excepturi temporibus delectus aspernatur facilis officia dolorem
+                molestiae porro aut accusantium magnam veniam. Molestiae iusto nihil quas itaque, molestias cumque, fuga
+                quasi repellendus sapiente illo maiores sint illum suscipit totam modi id! Quod sequi ipsum dolore. Enim
+                necessitatibus earum corporis quam aliquid autem unde reprehenderit tempora nobis laboriosam, dolorem
+                voluptate fugit, dolore incidunt placeat facilis sequi labore.</p>
+            <div class="widget">
+                widget
+            </div>
+            <p>Iste esse aliquam odit praesentium totam adipisci, eaque illum nemo neque sequi tempora laborum, impedit
+                numquam amet fugit facere reiciendis nisi suscipit, possimus blanditiis! Totam soluta nesciunt repellat
+                fuga eos id necessitatibus consequatur placeat aut dicta, dignissimos quasi ad qui sed consequuntur
+                molestiae laborum ducimus non labore deleniti nemo mollitia numquam accusantium corrupti. Dolores vero
+                laudantium necessitatibus. Quas quibusdam rerum ratione saepe voluptatum doloribus nesciunt dolorem?
+                Possimus, quasi id consequatur sunt culpa ipsam, aperiam asperiores consequuntur dolorem voluptatibus
+                rem tempora hic? Illum accusamus reiciendis, perspiciatis reprehenderit quaerat sapiente sint labore
+                odit. Quidem non, modi sint eum placeat magnam facilis corporis.</p>
+            <p>Velit modi aspernatur aperiam corporis animi laboriosam quia distinctio debitis perspiciatis totam ea
+                iste eveniet illum recusandae dolorum dignissimos autem culpa, enim nemo iure. Placeat officiis cumque
+                assumenda autem harum ut tempore aut, unde ex fugit corrupti, inventore nisi odit dolor voluptates
+                pariatur hic? Dolore eaque, iusto explicabo voluptate modi alias fuga ducimus officia voluptatum, vero
+                error, provident pariatur commodi. Maxime, reiciendis quis. Delectus at accusamus cumque velit veniam
+                soluta tempore nulla, illum, itaque id unde provident explicabo eos. Sed similique dicta dolores odit
+                dolorem laudantium illo dignissimos. Reprehenderit maxime earum corporis molestias et quam impedit fugit
+                modi commodi neque?</p>
+            <p>Necessitatibus perferendis ipsa placeat, suscipit id perspiciatis sit nihil, atque sunt, distinctio nam
+                nostrum ullam tempora consequatur. Non vero, provident dolorem dolor minus soluta, at molestiae
+                exercitationem accusamus alias temporibus perferendis cumque. Repudiandae sit asperiores earum ullam
+                quos cum explicabo necessitatibus at enim et odit voluptatem numquam, quas delectus cumque dolores est
+                ratione qui obcaecati recusandae aperiam, quibusdam natus. Molestias temporibus, totam rem ea qui
+                debitis possimus maiores magnam facere ratione sequi ad eum ex consectetur doloribus reprehenderit,
+                voluptas earum esse harum. Minima praesentium, aliquam architecto corrupti odit nostrum cumque saepe.
+                Harum similique, quae voluptates aliquam autem tempora aut facilis!</p>
+            <p>Delectus, nulla deserunt sunt amet porro vel rerum facilis tempora ut natus tenetur? Qui repudiandae,
+                error in fugit itaque consequuntur, quia repellat quibusdam explicabo illum animi ut assumenda ea
+                dignissimos, eum mollitia dolor rem maxime deleniti placeat nisi doloremque? Laboriosam voluptate ex
+                debitis, optio aliquam voluptas veniam at dignissimos non voluptatibus provident, assumenda soluta,
+                dolore earum? Magni veniam at, eum possimus fuga saepe eligendi iste voluptatum omnis laudantium.
+                Veritatis laboriosam alias aspernatur! Nihil quos inventore laudantium recusandae quam numquam provident
+                doloremque nemo veniam laboriosam tenetur, quis totam velit reiciendis sunt ad. Neque aliquid dolor
+                adipisci possimus debitis accusamus suscipit minus.</p>
+        </div>
+        <!-- end content -->
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+
+</html>

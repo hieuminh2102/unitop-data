@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lý thuộc tính</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // 1- click vào a hiển thị lên LINK của hình ảnh thông qua alert
+            // $("a.get_link_img").click(function(){
+            //     var link_img;
+            //     link_img = $("img").attr('src');
+            //     alert(link_img);
+            //     return false;
+            // });
+            // 2-thiết lập giá trị thuộc tính
+            // $("a.get_link_img").click(function(){
+            //     var link_img;
+            //     link_img = $("img").attr('title' , 'Camera hành trình');
+            //     alert(link_img);
+            //     return false;
+            // });
+            // 3-
+            // $("a.get_link_img").click(function(){
+            //     var data_href;
+            //     data_href = $("img").attr('data-href');
+            //     alert(data_href);
+            //     return false;
+            // });
+            // 4- 
+            // $("a.get_link_img").click(function(){
+            //     var width;
+            //     width = $("img").attr('width', '500');
+            //     alert(width);
+            //     return false;
+            // });
+            // 5- 
+            $("a.remove_attr").click(function(){
+                $("img").removeAttr('src');
+                $("img").removeAttr('data-href');
+                return false;
+            });
+
+        });
+    </script>
+    <img data-href="adc.html"  src="images/camera_hanh_trinh.jpg" alt="" title="">
+    <a class="get_link_img" href="#">Lấy link ảnh</a>
+    <a class="remove_attr" href="#">Hủy giá trị thuộc tính</a>
+</body>
+</html>

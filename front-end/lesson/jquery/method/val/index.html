@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức làm việc với giá trị</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        input {
+            display: block;
+            margin: 5px 0px 10px 0px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // $("#form_login").submit(function(){
+            //     var username = $("#username").val();  //lấy giá trị của username
+            //     var password = $("#password").val();
+            //     alert(username+'-'+ password);
+            //     return false;
+            // });
+            $("#form_login").click(function () {
+                var username = $('#username').val();
+                var password = $('#password').val();
+                var str_result;
+
+                $("p strong#val_username").text(username);// đẩy dữ liệu vào thẻ strong
+                $("p strong#val_password").text(password);
+
+           //     alert($('strong#val_username').text());// lấy text
+
+                str_result = "<p>Username: <strong id='val_username'>" + username + "</strong></p> <p> Password: <strong id='val_password'>" + password + "</strong></p > "
+
+                $("#result").html(str_result);    // thiết lập nội dung cho #result
+
+                return false; // hủy reload submit và link của thẻ a
+            });
+        });
+    </script>
+    <h1>Form đăng nhập</h1>
+    <form id="form_login" action="" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" value="" id="password">
+        <input type="submit" name="sm_login" value="Đăng nhập">
+
+        <!-- <p>Username: <strong id='val_username'></strong></p>
+        <p> Password: <strong id='val_password'></strong></p> -->
+        
+        <div id="result">
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
