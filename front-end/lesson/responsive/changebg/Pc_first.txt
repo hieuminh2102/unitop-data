@@ -1,0 +1,16 @@
+/* ipad ngang(1024 x 768) */
+@media screen and (max-width: 1024px){
+}
+/* ipad dọc(768 x 1024) */
+@media screen and (max-width: 768px){
+}
+/* tablet nhỏ(480 x 640) */
+@media screen and (max-width: 480px){
+}
+/* iphone(480 x 640) */
+@media screen and (max-width: 320px){
+}
+/* smart phone nhỏ */
+@media screen and (max-width: 240px){
+}
+
