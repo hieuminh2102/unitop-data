@@ -1,4 +1,5 @@
 <?php
+require 'lib/validation.php';
 if (isset($_POST['btn_reg'])) {
     $error = array(); //phất cờ
     
@@ -35,16 +36,15 @@ if (isset($_POST['btn_reg'])) {
         </style>
         <form action="" method="POST">
             <label for="fullname">Họ và tên</label>
-            <input type="text" name="fullname" id="fullname" value="<?php if(!empty($fullname)) echo $fullname;?>">
-            <?php if(!empty($error['fullname'])) echo "<p class='error'>{$error['fullname']}</p>" ?>
-            
+            <input type="text" name="fullname" id="fullname" value="<?php echo set_value('fullname');?>">
+            <?php echo form_error('fullname');?>
             <label>Giới tính</label>
             <select name="gender">
                 <option value="">--chọn--</option>
                 <option <?php if(!empty($gender) && $gender == 'male') echo "selected='selected'"; ?> value="male">Nam</option>
                 <option <?php if(!empty($gender) && $gender == 'female') echo "selected='selected'";?> value="female">Nữ</option>
             </select>
-            <?php if(!empty($error['gender'])) echo "<p>{$error['gender']}</p>"?>
+            <?php echo form_error('gender');?>
             <input type="submit" name="btn_reg" value="Register">
         </form>
     </body>
