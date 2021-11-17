@@ -4,6 +4,8 @@ require 'data/pages.php';
 require 'data/products.php';
 #thư viện hàm
 require 'lib/pages.php';
+require 'lib/product.php';
+require 'lib/number.php';
 require 'lib/data.php';
 require 'lib/template.php';
 ?>

@@ -1,6 +1,7 @@
 /*MAIN CONTENT*/
 #sidebar{ width: 18%;}
 #content{
+    min-height: 550px;
     width: 82%;
     padding: 0px 20px;
     border-left: 1px solid #ddd;
@@ -18,6 +19,8 @@
     color: #c10000;
 }
 .section-title{
+    display: block;
+    color: #000;
     padding: 20px 0px;
     font-family: 'Roboto Medium';
     text-transform: uppercase;
