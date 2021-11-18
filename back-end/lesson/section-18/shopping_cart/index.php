@@ -1,4 +1,5 @@
 <?php
+// test git commit 1 chút
 #dữ liệu
 require 'data/pages.php';
 require 'data/products.php';
