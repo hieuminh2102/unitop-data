@@ -1,5 +1,7 @@
 <?php
 // test git commit 1 chút
+session_start();
+ob_start();
 #dữ liệu
 require 'data/pages.php';
 require 'data/products.php';
@@ -9,6 +11,9 @@ require 'lib/product.php';
 require 'lib/number.php';
 require 'lib/data.php';
 require 'lib/template.php';
+require 'lib/cart.php';
+require 'lib/url.php';
+
 ?>
 
 <?php
