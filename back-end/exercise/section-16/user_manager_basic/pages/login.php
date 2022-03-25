@@ -39,7 +39,7 @@ if (isset($_POST['btn-login'])) {
             $_SESSION['is_login'] = true;
             $_SESSION['user_login'] = $username;
             //chuyen huong vao trong he thong
-            redirect("?page=home");
+            redirect("?mod=home&controller=index&action=index");
         } else {
             $error['account'] = "Ten dang nhap va mat khau khong dung dinh dang";
         }

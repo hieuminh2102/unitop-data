@@ -1,0 +1,35 @@
+.table_data{
+    width: 100%;
+}
+.table_data thead tr td {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+.table_data tr td {
+    border-bottom: 1px solid #333;
+    padding: 8px 15px;
+}
+
+ul.pagging {
+    float: right;
+    margin-top: 20px;
+}
+
+ul.pagging li {
+    float: left;
+    list-style: none;
+    padding: 0px 2px;
+}
+
+ul.pagging li a {
+    display: block;
+    color: #333;
+    border: 1px solid #dedede;
+    padding: 5px 10px;
+}
+
+ul.pagging li.active a{
+    color: #f00;
+    border: 1px solid #f00;
+}
